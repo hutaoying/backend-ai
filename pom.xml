@@ -13,6 +13,11 @@
     <groupId>com.example</groupId>
     <artifactId>demo</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>backend-auth</module>
+        <module>backend-boot</module>
+    </modules>
 
     <properties>
         <java.version>17</java.version>
@@ -28,7 +33,6 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-
         <!-- 添加 Hutool 工具类库 -->
         <dependency>
             <groupId>cn.hutool</groupId>
@@ -41,6 +45,13 @@
             <groupId>com.alibaba.fastjson2</groupId>
             <artifactId>fastjson2</artifactId>
             <version>2.0.33</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
